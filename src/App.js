@@ -29,7 +29,7 @@ function App() {
         <h1>My To-Do List</h1>
       </header>
       <main>
-        <TaskList tasks={tasks} />
+        <TaskList tasks={tasks} setTasks={setTasks} />
         <form onSubmit={handleAddTask}>
           <input
             type="text"
