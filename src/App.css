@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background-color: #0600ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000000' stroke-width='98.3' stroke-opacity='0.73' %3E%3Ccircle fill='%230600FF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%230105f1' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23020fe4' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%230318d6' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23041fc8' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%230425bb' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23052aae' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23052ea1' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23063094' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23063287' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%2306327a' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%2306326d' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23063061' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23052d55' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23052a48' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2304253c' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23041f30' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23031924' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: fit-content;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.644);
+  border-radius: 10px;
+  box-shadow: rgba(82, 82, 82, 0.13) 7px 7px 5px 0px;
+}
+
+.App-header {
+  font-size: 2.75em;
+  margin: 0px;
+}
+
+main {
+  font-size: 1.75em;
+  margin-top: 0;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.appInput {
+  text-align: center;
+  height: fit-content;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: x-large;
+  background-color: rgba(0, 0, 0, 0.644);
+}
+
+button {
+  width: 25%;
+  height: fit-content;
+  border-radius: 5px;
+  background-color: rgba(45, 114, 204, 0.644);
+  color: white;
+  font-size: x-large;
+}
+
+button:hover {
+  background-color: rgba(27, 68, 122, 0.644);
+}

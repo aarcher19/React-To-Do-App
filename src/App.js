@@ -25,21 +25,24 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>My To-Do List</h1>
-      </header>
-      <main>
-        <TaskList tasks={tasks} setTasks={setTasks} />
-        <form onSubmit={handleAddTask}>
-          <input
-            type="text"
-            placeholder="Add a new Task"
-            value={newTaskText}
-            onChange={handleTaskChange}
-          />
-          <button type="submit">Add</button>
-        </form>
-      </main>
+      <div className="container">
+        <header className="App-header">
+          <h1>My To-Do List</h1>
+        </header>
+        <main>
+          <TaskList tasks={tasks} setTasks={setTasks} />
+          <form onSubmit={handleAddTask}>
+            <input
+              className="appInput"
+              type="text"
+              placeholder="Add a new Task"
+              value={newTaskText}
+              onChange={handleTaskChange}
+            />
+            <button type="submit">Add</button>
+          </form>
+        </main>
+      </div>
     </div>
   );
 }

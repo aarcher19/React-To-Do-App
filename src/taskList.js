@@ -1,4 +1,5 @@
 import React from "react";
+import "./taskList.css";
 
 const TaskList = ({ tasks, setTasks }) => {
   const handleTaskToggle = (taskId) => {
@@ -18,6 +19,7 @@ const TaskList = ({ tasks, setTasks }) => {
           <li key={task.id}>
             <span>{task.text}</span>
             <input
+              className="taskListInput"
               type="checkbox"
               checked={task.completed}
               onChange={() => handleTaskToggle(task.id)}
