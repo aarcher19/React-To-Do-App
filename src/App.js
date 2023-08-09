@@ -1,12 +1,27 @@
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
+import TaskList from "./taskList";
 
 function App() {
-  // const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState([]);
 
-  // const [newTaskText, setNewTaskText] = useState("");
+  const [newTaskText, setNewTaskText] = useState("");
 
-  // const
+  const handleTaskChange = (e) => {
+    setNewTaskText(e.target.value);
+  };
+
+  const handleAddTask = (e) => {
+    e.preventDefault();
+    if (newTaskText.trim() === "") return;
+    const newTask = {
+      id: tasks.length + 1,
+      text: newTaskText,
+      completed: false,
+    };
+    setTasks([...tasks, newTask]);
+    setNewTaskText("");
+  };
 
   return (
     <div className="App">
@@ -14,9 +29,15 @@ function App() {
         <h1>My To-Do List</h1>
       </header>
       <main>
-        <form>
-          <input type="text"></input>
-          <button type="submit"></button>
+        <TaskList tasks={tasks} />
+        <form onSubmit={handleAddTask}>
+          <input
+            type="text"
+            placeholder="Add a new Task"
+            value={newTaskText}
+            onChange={handleTaskChange}
+          />
+          <button type="submit">Add</button>
         </form>
       </main>
     </div>
