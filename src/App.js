@@ -44,7 +44,7 @@ function App() {
             <input
               className="appInput"
               type="text"
-              placeholder="Add a new Task"
+              placeholder="Add Task"
               value={newTaskText}
               onChange={handleTaskChange}
             />
