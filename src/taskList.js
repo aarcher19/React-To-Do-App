@@ -1,7 +1,7 @@
 import React from "react";
 import "./taskList.css";
 
-const TaskList = ({ tasks, setTasks }) => {
+const TaskList = ({ tasks, setTasks, onDeleteTask }) => {
   const handleTaskToggle = (taskId) => {
     const updatedTasks = tasks.map((task) => {
       if (task.id === taskId) {
@@ -18,6 +18,12 @@ const TaskList = ({ tasks, setTasks }) => {
         {tasks.map((task) => (
           <li key={task.id}>
             <span>{task.text}</span>
+            <button
+              className="taskListDelete"
+              onClick={() => onDeleteTask(task.id)}
+            >
+              X
+            </button>
             <input
               className="taskListInput"
               type="checkbox"

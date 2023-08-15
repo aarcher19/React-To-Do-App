@@ -23,6 +23,11 @@ function App() {
     setNewTaskText("");
   };
 
+  const handelDeleteTask = (taskId) => {
+    const updatedTasks = tasks.filter((task) => task.id !== taskId);
+    setTasks(updatedTasks);
+  };
+
   return (
     <div className="App">
       <div className="container">
@@ -30,7 +35,11 @@ function App() {
           <h1>My To-Do List</h1>
         </header>
         <main>
-          <TaskList tasks={tasks} setTasks={setTasks} />
+          <TaskList
+            tasks={tasks}
+            setTasks={setTasks}
+            onDeleteTask={handelDeleteTask}
+          />
           <form onSubmit={handleAddTask}>
             <input
               className="appInput"
