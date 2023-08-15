@@ -1,6 +1,6 @@
 # ToDo App
 
-This is a simple ToDo App built using React. It allows you to add, manage, and complete tasks in a user-friendly interface.
+This is a simple ToDo App built using React. It allows you to add, manage, complete and delete tasks in a user-friendly interface.
 
 ## Features
 
